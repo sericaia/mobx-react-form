@@ -99,4 +99,9 @@ export default class Base {
       e.preventDefault();
       this.del($isEvent(path) ? this.path : path);
     });
+
+  /**
+    Event Handler: On Key Down
+  */
+  onKeyDown = (...args) => this.execHandler('onKeyDown', args);
 }
